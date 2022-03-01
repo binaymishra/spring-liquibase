@@ -4,7 +4,8 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
 
-  <changeSet id="1" author="Binay Mishra">
+  <changeSet id="1" author="Binay Mishra" labels="1.0" context="dev" dbms="mysql">
+    <comment>Create table changeSet</comment>
     <createTable tableName="house">
       <column name="id" type="bigint">
         <constraints primaryKey="true" primaryKeyName="house_id_pk"/>
@@ -12,7 +13,7 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
       <column name="owner" type="varchar(250)">
         <constraints unique="true" uniqueConstraintName="house_owner_unq"/>
       </column>
-      <column name="fully_paid" type="boolean" defaultValueBoolean="false"></column>
+      <column name="fully_paid" type="boolean" defaultValueBoolean="false"/>
     </createTable>
 
     <createTable tableName="item">

@@ -13,5 +13,6 @@ cd build/libs
 
 java -server -Xmx300M -XX:+UseG1GC \
       -jar "${artifact}-${version}.jar" \
+      --server.port=9000 \
       --spring.output.ansi.enabled=always \
       --spring.profiles.active=local

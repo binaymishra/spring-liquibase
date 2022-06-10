@@ -1,0 +1,15 @@
+server:
+  port: 9000
+
+spring:
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/liquibase-db
+    username: root
+    password: mysql
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+    contexts: dev
+    drop-first: false

@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
 
-  <changeSet id="1" author="Binay Mishra" labels="1.0" context="dev">
+  <changeSet id="1000" author="Binay Mishra" labels="1.0" context="dev">
     <comment>Create table changeSet</comment>
     <createTable tableName="house">
       <column name="id" type="bigint">

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+  <changeSet id="2" author="Binay Mishra" labels="1.0" context="dev">
+    <comment>pod_lock create table changeSet</comment>
+    <createTable tableName="pod_lock">
+      <column name="pod_lock_id" type="varchar(250)">
+        <constraints primaryKey="true" primaryKeyName="pod_lock_uuid"/>
+      </column>
+      <column name="pod_lock_name" type="varchar(250)"/>
+      <column name="pod_lock_datetime" type="varchar(250)"/>
+      <column name="pod_lock_timestamp" type="datetime" defaultValue="Now()"/>
+    </createTable>
+  </changeSet>
+
+</databaseChangeLog>

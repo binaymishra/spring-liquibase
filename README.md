@@ -15,5 +15,11 @@ $ sh run.sh
 ````
 docker run --rm -v "/$PWD/data":/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWORD=mysql -e MYSQL_DATABASE=liquibase-db -p 3306:3306 mysql:latest
 
-docker run --rm -v "/$PWD/data":/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWORD=mysql -e MYSQL_DATABASE=liquibase-db -p 3306:3306 mysql:oracle
+docker run --rm -v "/$PWD/data":/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWORD=mysql -e MYSQL_DATABASE=testDb -p 3306:3306 mysql:oracle
+
 ````
+
+### Use below
+~~~
+docker run --rm -v "/$PWD/data":/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWORD=mysql -e MYSQL_DATABASE=liquibase-db -p 3306:3306 mysql:oracle
+~~~
